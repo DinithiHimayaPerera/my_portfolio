@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinithi Himaya | Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #000814, #001d3d);
+  color: #e6f1ff;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e6f1ff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #4dabf7;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 10%;
+}
+
+h1, h2 {
+  color: #4dabf7;
+}
+
+/* HOME */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+
+.home div {
+  max-width: 600px;
+}
+
+/* CIRCULAR PROFILE IMAGE */
+.home img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid #4dabf7;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.home img:hover {
+  transform: scale(1.12);
+}
+
+.highlight {
+  color: #90e0ef;
+}
+
+/* Typing effect */
+#typed-name::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* CARD */
+.card {
+  background: #000;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0,200,255,0.4);
+}
+
+/* GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* PROJECT */
+.project-card {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00c8ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4dabf7;
+  color: #000;
+}
+
+/* CONTACT */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home {
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .home div {
+    max-width: 100%;
+  }
+
+  .home img {
+    width: 280px;
+    height: 280px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="home">
+  <div>
+    <h1 style="font-size: 3rem;">Hi, I'm <span class="highlight" id="typed-name"></span></h1>
+    <p style="font-size: 1.2rem;">A passionate <b>Software Project Manager (Future)</b> with a keen interest in designing efficient systems and leading teams to deliver high-quality software solutions.</p>
+    <p style="font-size: 1rem;">I focus on software processes, teamwork, problem-solving, and building impactful systems that make a difference. I enjoy learning new technologies, exploring innovative solutions, and contributing to collaborative projects that challenge me to grow both technically and professionally.</p>
+  </div>
+  <img src="profilepic.jpeg" alt="profile">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 style="font-size: 2.2rem; margin-bottom: 20px;">About Me</h2>
+  <div class="card" style="line-height: 1.8; font-size: 1.1rem;">
+    <p>
+      I am currently pursuing a Bachelor of Science degree at the University of Sri Jayawardenepura. 
+      My academic focus is on software development, system analysis, and software process management, 
+      which allows me to combine technical expertise with leadership and project management skills.
+    </p>
+    <p>
+      Beyond academics, I am passionate about solving real-world problems using technology, 
+      collaborating with diverse teams, and continuously improving my knowledge in programming, 
+      databases, and software lifecycle management. I thrive on challenges that push me to think critically 
+      and apply practical solutions to complex problems.
+    </p>
+    <p>
+      My long-term goal is to become a proficient software project manager who can oversee 
+      projects end-to-end, ensuring both technical excellence and team productivity. 
+      I enjoy mentoring, sharing knowledge, and contributing to initiatives that promote innovation 
+      and efficiency in software development.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Bank of Ceylon (BoC) – Head Office</h3>
+    <p><b>Position:</b> Trainee (School Leaver)</p>
+    <p><b>Duration:</b> 6 Months</p>
+    <p><b>Department:</b> Audit Division</p>
+    <p>
+      Gained practical exposure to auditing processes, financial document analysis,
+      and organizational workflows. Developed attention to detail and professionalism.
+    </p>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <h2>Activities & Memberships</h2>
+  <div class="card">
+    <h3>IEEE Student Member</h3>
+    <p>
+      Member of IEEE Student Chapter at University of Sri Jayawardenepura.
+      Participating in technical events, teamwork activities, and knowledge sharing.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">C, Python, PHP, JavaScript</div>
+    <div class="card">MySQL, SQL</div>
+    <div class="card">Git, VS Code</div>
+    <div class="card">Excel</div>
+    <div class="card">Teamwork</div>
+    <div class="card">Problem Solving</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="skills-grid">
+    <div class="card project-card">
+      <img src="flood_relief.png" alt="project">
+      <h3>Flood Relief Management System</h3>
+      <p>Full-stack system with admin dashboard, role-based access, and CRUD operations using web technologies.</p>
+      <a href="https://github.com/DinithiHimayaPerera/Flood-Relief-Management-System" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="card project-card">
+      <img src="Library_management.png" alt="project">
+      <h3>Library Management System</h3>
+      <p>Built using C to manage books, users, and issuing system efficiently.</p>
+      <a href="https://github.com/CSC1031/librarymanagementsystem-group-a" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="card project-card">
+      <img src="logistic.png" alt="project">
+      <h3>Logistic Management System</h3>
+      <p>C-based system for handling delivery tracking, inventory, and transport management.</p>
+      <a href="https://github.com/DinithiHimayaPerera/LogisticManagementSystem-C" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Connect With Me</h2>
+  <div class="card">
+    <p>Email: dinithihimaya@gmail.com</p>
+    <p>
+      <a href="https://www.linkedin.com/in/dinithi-perera-a9970b391" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/DinithiHimayaPerera" target="_blank">GitHub</a>
+    </p>
+
+    <!-- Formspree contact form -->
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Dinithi Himaya | Future Software Project Manager</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+// Typing effect
+const typedName = document.getElementById("typed-name");
+let index = 0;
+const nameText = "Dinithi Himaya";
+function type() {
+  if (index < nameText.length) {
+    typedName.textContent += nameText[index];
+    index++;
+    setTimeout(type, 150);
+  }
+}
+window.onload = type;
+
+// Formspree JS submission
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('https://formspree.io/f/mbdpygwj', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert('✅ Thank you! Your message has been sent.');
+      form.reset();
+    } else {
+      alert('❌ Error sending message: ' + (result.errors ? result.errors.map(e => e.message).join(', ') : 'Unknown error'));
+    }
+
+  } catch (error) {
+    alert('❌ Network error: ' + error);
+  }
+});
+</script>
+
+</body>
+</html>
